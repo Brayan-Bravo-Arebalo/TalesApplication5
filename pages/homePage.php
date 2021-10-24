@@ -56,7 +56,9 @@
             <div class="col-1 bg-dark bg-opacity-75">
 
                 <div class="row  align-items-center justify-content-center">
-                    <div class="row"><h5>Lista de reproduciones</h5></div>
+                    <div class="row">
+                        <h5>Lista de reproduciones</h5>
+                    </div>
                     <div class="row ">
                         <div class="btn-group-vertical">
                             <button type="button" class="btn btn-warning">lista1</button>
@@ -74,42 +76,56 @@
             <div class="col-11 bg-dark bg-opacity-50">
                 <br>
                 <div class="row align-items-center justify-content-center">
-                    <div>recoemndaciones</div>
-                    <div class="col-3 border"> <iframe src="" frameborder="0"></iframe></div>
-                    <div class="col-3 border"><iframe src="" frameborder="0"></iframe></div>
-                    <div class="col-3 border"><iframe src="" frameborder="0"></iframe></div>
-                    <div class="col-3 border"><iframe src="" frameborder="0"></iframe></div>
+                    <div>Recomendaciones</div>
+                    <div id="recomendacion1" class="col-3 border"></div>
+                    <div id="recomendacion2" class="col-3 border"></div>
+                    <div id="recomendacion3" class="col-3 border"></div>
+                    <div id="recomendacion4" class="col-3 border"></div>
                 </div>
                 <br>
                 <div class="row border">
-                    <div>busqueda de contendo </div> <br>
-                    <div class="col-3 border"> <iframe src="" frameborder="0"></iframe></div>
-                    <div class="col-3 border"><iframe src="" frameborder="0"></iframe></div>
-                    <div class="col-3 border"><iframe src="" frameborder="0"></iframe></div>
-                    <div class="col-3 border"><iframe src="" frameborder="0"></iframe></div>
+
+
+                    <div class="col-9">
+                        <h5>Sector de busqueda</h5>
+                    </div> <br>
+
+
+                    <div class="col-3">
+                        <div>
+                            <h5>Buscar video a traves de link</h5>
+                        </div>
+                        <form class="d-flex">
+                            <input id="link" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button id="buscadorContenido" class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-primary">Inciar Visualizacion</button>
+                            <button type="button" class="btn btn-primary">Guardar</button>
+
+                        </div>
+                        <iframe id="iframe1" allowfullscreen src="" width="420" height="240" frameborder="0"></iframe>
+                    </div>
+
                 </div>
                 <br>
                 <div class="row border">
                     <div>Ya Guardado <button type="button" class="btn btn-primary">Todos El Contenido</button> </div>
-                    <div class="col-2 border"><iframe src="" frameborder="0"></iframe></div>
-                    <div class="col-2 border"><iframe src="" frameborder="0"></iframe></div>
-                    <div class="col-2 border"><iframe src="" frameborder="0"></iframe></div>
-                    <div class="col-2 border"><iframe src="" frameborder="0"></iframe></div>
-                    <div class="col-2 border"><iframe src="" frameborder="0"></iframe></div>
-                    <div class="col-2 border"><iframe src="" frameborder="0"></iframe></div>
+                    <div class="col-3 border"><iframe id="iframeGuardado1" allowfullscreen src="" width="420" height="240" frameborder="0"></iframe></iframe></div>
+                    <div class="col-3 border"><iframe id="iframeGuardado2" allowfullscreen src="" width="420" height="240" frameborder="0"></iframe></iframe></div>
+                    <div class="col-3 border"><iframe id="iframeGuardado3" allowfullscreen src="" width="420" height="240" frameborder="0"></iframe></iframe></div>
+                    <div class="col-3 border"><iframe id="iframeGuardado4" allowfullscreen src="" width="420" height="240" frameborder="0"></iframe></iframe></div>
+                    <div class="col-3 border"><iframe id="iframeGuardado5" allowfullscreen src="" width="420" height="240" frameborder="0"></iframe></iframe></div>
+                    <div class="col-3 border"><iframe id="iframeGuardado6" allowfullscreen src="" width="420" height="240" frameborder="0"></iframe></iframe></div>
                 </div>
             </div>
         </div>
 
-
-
-
-
-
-
-
     </div>
 
+    <template id="iframes">
+        <iframe id="iframe1" allowfullscreen src="" width="420" height="240" frameborder="0"></iframe>
+    </template>
 
 
 
@@ -120,6 +136,7 @@
 
 
     <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/homePage.js"></script>
 
 </body>
 
