@@ -12,7 +12,7 @@
 
 <body style="background-image: url(../img/img1.jpg);">
     <div class="container">
-        <button type="button" class="btn btn-light">volver a la pagina principal</button>
+        <button id="volver" type="button" class="btn btn-light">volver a la pagina principal</button>
 
         <div class="justify-content-center align-items-center">
             <iframe src="" width="1280" height="720" frameborder="0"></iframe>
@@ -22,7 +22,7 @@
 
 
 
-
+    <script src="../js/visualizador.js"></script>
 </body>
 
 </html>
