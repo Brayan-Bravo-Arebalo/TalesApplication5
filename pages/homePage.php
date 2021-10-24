@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 </head>
 
-<body>
+<body style="background-image: url(../img/img1.jpg);">
     <div id="menu">
         <nav class="navbar navbar-expand-lg navbar-dark  bg-dark">
             <div class="container-fluid">
@@ -50,27 +50,28 @@
         </nav>
     </div>
 
-    <div id="contenido" class="container-fluid ">
+    <div id="contenido" class="container-fluid text-white">
 
-        <div class="row" >
-            <div class="col-1">
+        <div class="row">
+            <div class="col-1 bg-dark bg-opacity-75">
 
                 <div class="row  align-items-center justify-content-center">
-                    <div>listas de reproducion </div>
-                    <div class="row">
-                        <div class="col-12 "><a href="" class="btn">lista 1</a></div>
-                        <div class="col-12 "><a href="" class="btn">lista a</a></div>
-                        <div class="col-12 "><a href="" class="btn">lista 2b</a></div>
-                        <div class="col-12 "><a href="" class="btn">lista 4g</a></div>
-                        <div class="col-12 "><a href="" class="btn">lista 62</a></div>
-                        <div class="col-12"><button type="button" class="btn btn-danger">+</button></div>
+                    <div class="row"><h5>Lista de reproduciones</h5></div>
+                    <div class="row ">
+                        <div class="btn-group-vertical">
+                            <button type="button" class="btn btn-warning">lista1</button>
+                            <button type="button" class="btn btn-info">lista2</button>
+                            <button type="button" class="btn btn-light">lista3</button>
+
+                        </div>
+                        <button type="button" class="btn btn-danger">+</button>
                     </div>
 
                 </div>
 
             </div>
 
-            <div class="col-11">
+            <div class="col-11 bg-dark bg-opacity-50">
                 <br>
                 <div class="row align-items-center justify-content-center">
                     <div>recoemndaciones</div>
