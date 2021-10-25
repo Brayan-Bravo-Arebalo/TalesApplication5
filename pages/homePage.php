@@ -88,6 +88,78 @@
 
                     <div class="col-9">
                         <h5>Sector de busqueda</h5>
+                        <form class="d-flex" method="POST" action="homePage.php" g>
+                            <input id="buscar" name="busqueda" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button id="buscador" class="btn btn-outline-success" type="submit">buscar</button>
+                        </form>
+
+
+
+
+                        <div class="row">
+
+                            <?php
+                            $api_youtube = "AIzaSyCWH11RXJ_WdQkEl6k_q9lrf7RII-0r2-Q";
+
+                            $url_youtube = "https://www.googleapis.com/youtube/v3/search";
+
+                            $busqueda = $_POST["busqueda"];
+                            $busqueda= strtr($busqueda," ", "+");
+
+                            $regionCode = "Cl";
+
+
+                            $type = "video";
+
+                            $part = "id,snippet";
+
+                            $url = $url_youtube;
+                            $url .= "?key=" . $api_youtube;
+                            $url .= "&part=" . $part;
+                            $url .= "&order=relevance";
+                            $url .= "&q=" . $busqueda;
+                            $url .= "&regioncode=" . $regionCode;
+                            $url .= "&type=" . $type;
+
+                            $ch = curl_init();
+                            curl_setopt($ch, CURLOPT_URL, $url);
+                            curl_setopt($ch, CURLOPT_HEADER, false);
+                            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                            $result = curl_exec($ch);
+
+                            $phpObj = json_decode($result, true);
+
+                            $i = 1;
+
+                            if ( strlen($busqueda) > 2) {
+
+                                foreach ($phpObj["items"] as $key => $value) {
+
+                                    $url_video = 'https://www.youtube.com/embed/' . $value["id"]["videoId"];
+                                    echo '<br><br>';
+                                    echo '<div class="col-4">';
+                                    echo    "<h6>titulo video: " . $value["snippet"]["title"] . " </h6>";
+
+                                    echo    '<div class="btn-group" role="group" aria-label="Basic example">
+                                            <button id"visualizar'.$i.'"  type="button" class="btn btn-primary">Inciar Visualizacion</button>
+                                            <button id"guardar'.$i.'" type="button" class="btn btn-primary">Guardar</button>
+                                        </div>';
+
+                                    echo    '<iframe allowfullscreen src="' . $url_video . '" width="420" height="240" frameborder="0"></iframe>';
+                                    echo '</div>';
+                                    $i++;
+                                }
+                            }
+
+
+
+                            ?>
+
+                        </div>
+
+
+
+
                     </div> <br>
 
 
