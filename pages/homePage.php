@@ -210,6 +210,21 @@
 
 
     </div>
+                         <!--   
+    <div hidden>
+        
+        <form action="" method="POST">
+            <input type="text" id="nombrefForm2" name="nombre">
+            <input type="text" id="codigoForm2" name="codigo">
+            <input type="text" id="plataformaForm2" name="plataforma">
+            <button id="btnFantasma2" type="submit"></button>
+
+        </form>
+        
+
+
+    </div>
+                        -->
 
 
 
