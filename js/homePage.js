@@ -22,3 +22,66 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 
+const busquedaYoutube = document.getElementById("busquedaYoutube");
+
+busquedaYoutube.addEventListener("click", (e) => {
+    
+    if(e.target.id === "guardar1"){
+        let videoAguardar = document.getElementById("iframe1");
+        let nombre = document.getElementById("nombre1").textContent;
+        let codigo = videoAguardar.src;
+        let plataforma = "youtube";
+        guardarVideo(nombre,codigo,plataforma);
+    }
+
+    if(e.target.id === "guardar2"){
+        let videoAguardar = document.getElementById("iframe2");
+        let nombre = document.getElementById("nombre2").textContent;
+        let codigo = videoAguardar.src;
+        let plataforma = "youtube";
+        guardarVideo(nombre,codigo,plataforma);
+    }
+
+    if(e.target.id === "guardar3"){
+        let videoAguardar = document.getElementById("iframe3");
+        let nombre = document.getElementById("nombre3").textContent;
+        let codigo = videoAguardar.src;
+        let plataforma = "youtube";
+        guardarVideo(nombre,codigo,plataforma);
+    }
+    if(e.target.id === "guardar4"){
+        let videoAguardar = document.getElementById("iframe4");
+        let nombre = document.getElementById("nombre4").textContent;
+        let codigo = videoAguardar.src;
+        let plataforma = "youtube";
+        guardarVideo(nombre,codigo,plataforma);
+    }
+    if(e.target.id === "guardar5"){
+        let videoAguardar = document.getElementById("iframe5");
+        let nombre = document.getElementById("nombre5").textContent;
+        let codigo = videoAguardar.src;
+        let plataforma = "youtube";
+        guardarVideo(nombre,codigo,plataforma);
+    }
+
+
+    
+})
+
+
+const guardarVideo = (nombre,codigo,plataforma) =>{
+    let input1 = document.getElementById("nombrefForm");
+    let input2 = document.getElementById("codigoForm");
+    let input3 = document.getElementById("plataformaForm");
+    let btn = document.getElementById("btnFantasma");
+
+    input1.value=nombre;
+    input2.value=codigo;
+    input3.value=plataforma;
+    btn.click();
+    
+
+}
+
+
+

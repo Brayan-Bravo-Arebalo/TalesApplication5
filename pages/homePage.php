@@ -75,13 +75,6 @@
 
             <div class="col-11 bg-dark bg-opacity-50">
                 <br>
-                <div class="row align-items-center justify-content-center">
-                    <div>Recomendaciones</div>
-                    <div id="recomendacion1" class="col-3 border"></div>
-                    <div id="recomendacion2" class="col-3 border"></div>
-                    <div id="recomendacion3" class="col-3 border"></div>
-                    <div id="recomendacion4" class="col-3 border"></div>
-                </div>
                 <br>
                 <div class="row border">
 
@@ -96,15 +89,22 @@
 
 
 
-                        <div class="row">
+                        <div id="busquedaYoutube" class="row">
 
                             <?php
+
+                            //error_reporting(0);
                             $api_youtube = "AIzaSyCWH11RXJ_WdQkEl6k_q9lrf7RII-0r2-Q";
 
                             $url_youtube = "https://www.googleapis.com/youtube/v3/search";
 
-                            $busqueda = $_POST["busqueda"];
-                            $busqueda= strtr($busqueda," ", "+");
+                            if ($_POST["busqueda"] == "") {
+                                $busqueda = "canciones infantiles";
+                            } else {
+                                $busqueda = $_POST["busqueda"];
+                            }
+
+                            $busqueda = strtr($busqueda, " ", "+");
 
                             $regionCode = "Cl";
 
@@ -131,21 +131,21 @@
 
                             $i = 1;
 
-                            if ( strlen($busqueda) > 2) {
+                            if (strlen($busqueda) > 2) {
 
                                 foreach ($phpObj["items"] as $key => $value) {
 
                                     $url_video = 'https://www.youtube.com/embed/' . $value["id"]["videoId"];
                                     echo '<br><br>';
-                                    echo '<div class="col-4">';
-                                    echo    "<h6>titulo video: " . $value["snippet"]["title"] . " </h6>";
+                                    echo '<div id="busqueda' . $i . '" class="col-4">';
+                                    echo    '<h6 id="nombre' . $i . '">' . $value["snippet"]["title"] . ' </h6>';
 
                                     echo    '<div class="btn-group" role="group" aria-label="Basic example">
-                                            <button id"visualizar'.$i.'"  type="button" class="btn btn-primary">Inciar Visualizacion</button>
-                                            <button id"guardar'.$i.'" type="button" class="btn btn-primary">Guardar</button>
+                                            <button id="visualizar' . $i . '"  type="button" class="btn btn-primary">Inciar Visualizacion</button>
+                                            <button id="guardar' . $i . '" type="button" class="btn btn-primary">Guardar</button>
                                         </div>';
 
-                                    echo    '<iframe allowfullscreen src="' . $url_video . '" width="420" height="240" frameborder="0"></iframe>';
+                                    echo    '<iframe id=iframe' . $i . ' allowfullscreen src="' . $url_video . '" width="420" height="240" frameborder="0"></iframe>';
                                     echo '</div>';
                                     $i++;
                                 }
@@ -198,6 +198,18 @@
     <template id="iframes">
         <iframe id="iframe1" allowfullscreen src="" width="420" height="240" frameborder="0"></iframe>
     </template>
+
+    <div hidden>
+        <form action="../controllerAndModel/guardarVideo/GuardarVideoController.php" method="POST">
+            <input type="text" id="nombrefForm" name="nombre">
+            <input type="text" id="codigoForm" name="codigo">
+            <input type="text" id="plataformaForm" name="plataforma">
+            <button id="btnFantasma" type="submit"></button>
+
+        </form>
+
+
+    </div>
 
 
 
