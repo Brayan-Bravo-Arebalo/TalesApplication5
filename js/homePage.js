@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const busquedaYoutube = document.getElementById("busquedaYoutube");
 
 busquedaYoutube.addEventListener("click", (e) => {
-    
+    e.target
     if(e.target.id === "guardar1"){
         let videoAguardar = document.getElementById("iframe1");
         let nombre = document.getElementById("nombre1").textContent;
@@ -63,22 +63,8 @@ busquedaYoutube.addEventListener("click", (e) => {
         let plataforma = "youtube";
         guardarVideo(nombre,codigo,plataforma);
     }
+    /*
 
-    if(e.target.id === "guardar5"){
-        let videoAguardar = document.getElementById("iframe5");
-        let nombre = document.getElementById("nombre5").textContent;
-        let codigo = videoAguardar.src;
-        let plataforma = "youtube";
-        guardarVideo(nombre,codigo,plataforma);
-        
-    }
-    if(e.target.id === "guardar5"){
-        let videoAguardar = document.getElementById("iframe5");
-        let nombre = document.getElementById("nombre5").textContent;
-        let codigo = videoAguardar.src;
-        let plataforma = "youtube";
-        guardarVideo(nombre,codigo,plataforma);
-    }
     if(e.target.id === "visualizar1"){
         let videoAguardar = document.getElementById("iframe1");
         let nombre = document.getElementById("nombre1").textContent;
@@ -116,7 +102,7 @@ busquedaYoutube.addEventListener("click", (e) => {
         let plataforma = "youtube";
         visualizarVideo(nombre,codigo,plataforma);
     }
-
+    */
 
     
 })
@@ -135,6 +121,7 @@ const guardarVideo = (nombre,codigo,plataforma) =>{
     
 
 }
+/*
 
 const visualizarVideo = (nombre,codigo,plataforma) =>{
     let input1 = document.getElementById("nombrefForm2");
@@ -148,6 +135,7 @@ const visualizarVideo = (nombre,codigo,plataforma) =>{
     btn.click();
 
 }
+*/
 
 
 

@@ -93,7 +93,7 @@
 
                             <?php
 
-                            //error_reporting(0);
+                            error_reporting(0);
                             $api_youtube = "AIzaSyCWH11RXJ_WdQkEl6k_q9lrf7RII-0r2-Q";
 
                             $url_youtube = "https://www.googleapis.com/youtube/v3/search";
@@ -189,6 +189,8 @@
                     <div class="col-3 border"><iframe id="iframeGuardado4" allowfullscreen src="" width="420" height="240" frameborder="0"></iframe></iframe></div>
                     <div class="col-3 border"><iframe id="iframeGuardado5" allowfullscreen src="" width="420" height="240" frameborder="0"></iframe></iframe></div>
                     <div class="col-3 border"><iframe id="iframeGuardado6" allowfullscreen src="" width="420" height="240" frameborder="0"></iframe></iframe></div>
+
+
                 </div>
             </div>
         </div>
@@ -208,9 +210,10 @@
 
         </form>
 
-
     </div>
-                         <!--   
+
+
+    <!--   
     <div hidden>
         
         <form action="" method="POST">
@@ -224,7 +227,7 @@
 
 
     </div>
-                        -->
+    -->
 
 
 
