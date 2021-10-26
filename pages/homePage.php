@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,7 +37,7 @@
                                 Cuenta
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Configurar</a></li>
+                                <!--<li><a class="dropdown-item" href="#">Configurar</a></li>-->
                                 <li><a class="dropdown-item" href="#">cerrar sesion</a></li>
 
                             </ul>
@@ -76,7 +78,7 @@
             <div class="col-11 bg-dark bg-opacity-50">
                 <br>
                 <br>
-                <div class="row border">
+                <div class="row">
 
 
                     <div class="col-9">
@@ -92,7 +94,8 @@
                         <div id="busquedaYoutube" class="row">
 
                             <?php
-
+                            
+    /*
                             error_reporting(0);
                             $api_youtube = "AIzaSyCWH11RXJ_WdQkEl6k_q9lrf7RII-0r2-Q";
 
@@ -151,8 +154,8 @@
                                 }
                             }
 
-
-
+                            
+                            */
                             ?>
 
                         </div>
@@ -176,19 +179,13 @@
                             <button type="button" class="btn btn-primary">Guardar</button>
 
                         </div>
-                        <iframe id="iframe1" allowfullscreen src="" width="420" height="240" frameborder="0"></iframe>
+                        <iframe id="iframeBusqueda" allowfullscreen src="" width="420" height="240" frameborder="0"></iframe>
                     </div>
 
                 </div>
                 <br>
                 <div class="row border">
-                    <div>Ya Guardado <button type="button" class="btn btn-primary">Todos El Contenido</button> </div>
-                    <div class="col-3 border"><iframe id="iframeGuardado1" allowfullscreen src="" width="420" height="240" frameborder="0"></iframe></iframe></div>
-                    <div class="col-3 border"><iframe id="iframeGuardado2" allowfullscreen src="" width="420" height="240" frameborder="0"></iframe></iframe></div>
-                    <div class="col-3 border"><iframe id="iframeGuardado3" allowfullscreen src="" width="420" height="240" frameborder="0"></iframe></iframe></div>
-                    <div class="col-3 border"><iframe id="iframeGuardado4" allowfullscreen src="" width="420" height="240" frameborder="0"></iframe></iframe></div>
-                    <div class="col-3 border"><iframe id="iframeGuardado5" allowfullscreen src="" width="420" height="240" frameborder="0"></iframe></iframe></div>
-                    <div class="col-3 border"><iframe id="iframeGuardado6" allowfullscreen src="" width="420" height="240" frameborder="0"></iframe></iframe></div>
+                    <div> <button type="button" class="btn btn-primary">Todos El Contenido</button> </div>
 
 
                 </div>
@@ -216,7 +213,7 @@
      
     <div hidden>
         
-        <form action="" method="POST">
+        <form action="../pages/visualizador.php" method="POST">
             <input type="text" id="nombrefForm2" name="nombre">
             <input type="text" id="codigoForm2" name="codigo">
             <input type="text" id="plataformaForm2" name="plataforma">
@@ -224,10 +221,7 @@
 
         </form>
         
-
-
     </div>
-    -->
 
 
 

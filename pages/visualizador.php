@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,11 +13,17 @@
 </head>
 
 <body style="background-image: url(../img/img1.jpg);">
+    <?php
+    
+    $nombre = $_POST["nombre"];
+    $codigo = $_POST["codigo"];
+    
+    ?>
     <div class="container">
         <button id="volver" type="button" class="btn btn-light">volver a la pagina principal</button>
 
         <div class="justify-content-center align-items-center">
-            <iframe src="" width="1280" height="720" frameborder="0"></iframe>
+            <iframe src="<?=$codigo."?autoplay=1"?>" width="1280" height="720" allow="accelerometer; autoplay=1;"  frameborder="0"></iframe>
         </div>
 
     </div>

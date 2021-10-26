@@ -15,7 +15,7 @@ if(!empty($userEmail) && !empty($password)){
             
             session_start();
             $_SESSION["user"]=$userEmail;
-            $_SESSION["ID"]=$id;
+            $_SESSION["ID"]=$pass_md5;
             
             
             header("location:../../pages/homePage.php"); 
