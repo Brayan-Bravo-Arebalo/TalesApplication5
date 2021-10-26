@@ -55,6 +55,8 @@
     <div id="contenido" class="container-fluid text-white">
 
         <div class="row">
+
+            <!--
             <div class="col-1 bg-dark bg-opacity-75">
 
                 <div class="row  align-items-center justify-content-center">
@@ -74,6 +76,7 @@
                 </div>
 
             </div>
+-->
 
             <div class="col-11 bg-dark bg-opacity-50">
                 <br>
@@ -165,7 +168,7 @@
 
                     </div> <br>
 
-
+<!--
                     <div class="col-3">
                         <div>
                             <h5>Buscar video a traves de link</h5>
@@ -181,11 +184,11 @@
                         </div>
                         <iframe id="iframeBusqueda" allowfullscreen src="" width="420" height="240" frameborder="0"></iframe>
                     </div>
-
+                        -->
                 </div>
                 <br>
                 <div class="row border">
-                    <div> <button type="button" class="btn btn-primary">Todos El Contenido</button> </div>
+                    <div> <button type="button" class="btn btn-primary">ir a contenido guardado</button> </div>
 
 
                 </div>
