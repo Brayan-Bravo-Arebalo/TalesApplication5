@@ -22,7 +22,7 @@
             <div class="card-body">
                 <h1 class="card-title">Tales Application</h1>
                 <p class="card-text">aplicacion de gestion contenido audiovisual para miños </p>
-                <a href="#" class="btn btn-primary">Iniciar Sesion</a>
+                <a href="pages/loginPage.php" class="btn btn-primary">Iniciar Sesion</a>
             </div>
             <div class="card-footer ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio similique sit inventore sint ipsa. Error sequi aspernatur dolores dignissimos, nobis odit nisi cupiditate placeat ipsa, harum dolor odio dolorum nulla.
