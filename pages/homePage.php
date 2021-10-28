@@ -149,17 +149,17 @@
                                                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                                                         <ul class="navbar-nav">
                                                             <button id="btnVisualizar' . $i . '"  type="button" class="btn btn-primary">Inciar Visualizacion</button>
-                                                            <li class="nav-item dropdown btn btn-primary">
+                                                            <li id="btnGuardar'.$i.'" class="nav-item dropdown btn btn-primary">
                                                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                                     Guardar
                                                                 </a>
                                                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                                                    <li><a class="dropdown-item" href="#">cuento</a></li>
-                                                                    <li><a class="dropdown-item" href="#">cancion</a></li>
-                                                                    <li><a class="dropdown-item" href="#">Series</a></li>
-                                                                    <li><a class="dropdown-item" href="#">Aprendizaje</a></li>
-                                                                    <li><a class="dropdown-item" href="#">Ingles</a></li>
-                                                                    <li><a class="dropdown-item" href="#">Actividades</a></li>
+                                                                    <li><a id="btnGuardarCuentos'.$i.'" class="dropdown-item" href="#">cuento</a></li>
+                                                                    <li><a id="btnGuardarCancion'.$i.'" class="dropdown-item" href="#">cancion</a></li>
+                                                                    <li><a id="btnGuardarSeries'.$i.'" class="dropdown-item" href="#">Series</a></li>
+                                                                    <li><a id="btnGuardarAprendisaje'.$i.'" class="dropdown-item" href="#">Aprendizaje</a></li>
+                                                                    <li><a id="btnGuardarIngles'.$i.'" class="dropdown-item" href="#">Ingles</a></li>
+                                                                    <li><a id="btnGuardarActividades'.$i.'" class="dropdown-item" href="#">Actividades</a></li>
                                                                 </ul>
                                                             </li>
                                                         </ul>
@@ -172,9 +172,9 @@
                                     echo '</div>';
                                     $i++;
                                 }
-                            }*/
-
-                            ?>
+                            }
+*/
+                            ?> 
 
                         </div>
 

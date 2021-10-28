@@ -51,9 +51,9 @@
         </nav>
     </div>
 
-    <div id="contenido" class="container-fluid text-white">
+    <div  class="container-fluid text-white">
 
-        <div class="row bg-dark bg-opacity-50">
+        <div id="contenido" class="row bg-dark bg-opacity-50">
 
 
             <?php
@@ -73,10 +73,11 @@
 
 
                     echo '</div>';
+                    $i++;
                 };
 
 
-                $i++;
+                
             }
             ?>
 
