@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,44 +13,45 @@
     <div id="menu">
         <nav class="navbar navbar-expand-lg navbar-dark  bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Tales Application</a>
+                <a class="navbar-brand" href="../pages/homePage.php">Tales Application</a>
                 <button class="navbar-toggler bg-danger" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown">
-                                option
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">option</a></li>
-                                <li><a class="dropdown-item" href="#">option</a></li>
-                                <li><a class="dropdown-item" href="#">option</a></li>
-                            </ul>
-                        </li>
+                        <ul class="navbar-nav">
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown">
-                                Cuenta
-                            </a>
-                            <ul class="dropdown-menu">
-                                <!--<li><a class="dropdown-item" href="#">Configurar</a></li>-->
-                                <li><a class="dropdown-item" href="#">cerrar sesion</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../controllerAndModel/llamarVideos/llamarCuentosController.php">Cuentos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../controllerAndModel/llamarVideos/llamarCancionesController.php">canciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../pages/loginPage.php">Series</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../pages/loginPage.php">Aprendizaaje</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../pages/loginPage.php">ingles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../pages/loginPage.php">Actividades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../pages/loginPage.php">Cerrar Sesion</a>
+                            </li>
 
-                            </ul>
-                        </li>
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
+                        </ul>
+
                     </div>
                 </div>
             </div>
         </nav>
     </div>
 
-    <div id="contenido" class="container-fluid text-white">
+    <div class="container-fluid text-white">
 
         <div class="row">
 
@@ -77,6 +76,7 @@
 
             </div>
 -->
+            <div style="height: 100px;"></div>
 
             <div class="col-11 bg-dark bg-opacity-50">
                 <br>
@@ -86,7 +86,7 @@
 
                     <div class="col-9">
                         <h5>Sector de busqueda</h5>
-                        <form class="d-flex" method="POST" action="homePage.php" g>
+                        <form class="d-flex" method="POST" action="homePage.php">
                             <input id="buscar" name="busqueda" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                             <button id="buscador" class="btn btn-outline-success" type="submit">buscar</button>
                         </form>
@@ -94,11 +94,9 @@
 
 
 
-                        <div id="busquedaYoutube" class="row">
+                        <div id="contenido" class="row">
 
-                            <?php
-                            
-    /*
+                            <?php /*
                             error_reporting(0);
                             $api_youtube = "AIzaSyCWH11RXJ_WdQkEl6k_q9lrf7RII-0r2-Q";
 
@@ -135,7 +133,7 @@
 
                             $phpObj = json_decode($result, true);
 
-                            $i = 1;
+                            $i = 0;
 
                             if (strlen($busqueda) > 2) {
 
@@ -144,21 +142,38 @@
                                     $url_video = 'https://www.youtube.com/embed/' . $value["id"]["videoId"];
                                     echo '<br><br>';
                                     echo '<div id="busqueda' . $i . '" class="col-4">';
-                                    echo    '<h6 id="nombre' . $i . '">' . $value["snippet"]["title"] . ' </h6>';
+                                    echo    '<h6 id="nombre' . $i . '" style="height: 50px;" >' . $value["snippet"]["title"] . ' </h6>';
 
-                                    echo    '<div class="btn-group" role="group" aria-label="Basic example">
-                                            <button id="visualizar' . $i . '"  type="button" class="btn btn-primary">Inciar Visualizacion</button>
-                                            <button id="guardar' . $i . '" type="button" class="btn btn-primary">Guardar</button>
-                                        </div>';
+                                    echo     '<nav class="navbar navbar-expand-lg navbar-light">
+                                                <div class="container-fluid">
+                                                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                                        <ul class="navbar-nav">
+                                                            <button id="btnVisualizar' . $i . '"  type="button" class="btn btn-primary">Inciar Visualizacion</button>
+                                                            <li class="nav-item dropdown btn btn-primary">
+                                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    Guardar
+                                                                </a>
+                                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                                                    <li><a class="dropdown-item" href="#">cuento</a></li>
+                                                                    <li><a class="dropdown-item" href="#">cancion</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Series</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Aprendizaje</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Ingles</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Actividades</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </nav>';
+
 
                                     echo    '<iframe id=iframe' . $i . ' allowfullscreen src="' . $url_video . '" width="420" height="240" frameborder="0"></iframe>';
                                     echo '</div>';
                                     $i++;
                                 }
-                            }
+                            }*/
 
-                            
-                            */
                             ?>
 
                         </div>
@@ -168,7 +183,7 @@
 
                     </div> <br>
 
-<!--
+                    <!--
                     <div class="col-3">
                         <div>
                             <h5>Buscar video a traves de link</h5>
@@ -187,45 +202,52 @@
                         -->
                 </div>
                 <br>
-                <div class="row border">
-                    <div> <button type="button" class="btn btn-primary">ir a contenido guardado</button> </div>
+                <div class="row ">
+                    <div>
+                        <form action="../controllerAndModel/llamarVideos/llamarVideosController.php" method="POST">
+
+                            <button type="submit" class="btn btn-primary">ir a contenido guardado</button>
+
+                        </form>
 
 
+                    </div>
                 </div>
             </div>
+
+
+
         </div>
 
-    </div>
+        <template id="iframes">
+            <iframe id="iframe1" allowfullscreen src="" width="420" height="240" frameborder="0"></iframe>
+        </template>
 
-    <template id="iframes">
-        <iframe id="iframe1" allowfullscreen src="" width="420" height="240" frameborder="0"></iframe>
-    </template>
+        <div hidden id="paraGuardar">
+            <form action="../controllerAndModel/guardarVideo/GuardarVideoController.php" method="POST">
+                <input type="text" id="nombrefForm" name="nombre">
+                <input type="text" id="codigoForm" name="codigo">
+                <input type="text" id="plataformaForm" name="plataforma">
+                <input type="text" id="clasificacion" name="clasificacion">
+                <button id="btnFantasma" type="submit"></button>
 
-    <div hidden>
-        <form action="../controllerAndModel/guardarVideo/GuardarVideoController.php" method="POST">
-            <input type="text" id="nombrefForm" name="nombre">
-            <input type="text" id="codigoForm" name="codigo">
-            <input type="text" id="plataformaForm" name="plataforma">
-            <button id="btnFantasma" type="submit"></button>
+            </form>
 
-        </form>
-
-    </div>
+        </div>
 
 
-     
-    <div hidden>
-        
-        <form action="../pages/visualizador.php" method="POST">
-            <input type="text" id="nombrefForm2" name="nombre">
-            <input type="text" id="codigoForm2" name="codigo">
-            <input type="text" id="plataformaForm2" name="plataforma">
-            <button id="btnFantasma2" type="submit"></button>
 
-        </form>
-        
-    </div>
+        <div hidden id="paraVisualizar">
 
+            <form action="../pages/visualizador.php" method="POST">
+                <input type="text" id="nombrefForm2" name="nombre">
+                <input type="text" id="codigoForm2" name="codigo">
+                <input type="text" id="plataformaForm2" name="plataforma">
+                <button id="btnFantasma2" type="submit"></button>
+
+            </form>
+
+        </div>
 
 
 
@@ -234,8 +256,10 @@
 
 
 
-    <script src="../bootstrap/js/bootstrap.min.js"></script>
-    <script src="../js/homePage.js"></script>
+        <script src="../js/funciones.js"></script>
+        <script src="../js/SelecionaContenido.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+
 
 </body>
 

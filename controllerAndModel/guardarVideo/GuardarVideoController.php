@@ -4,11 +4,12 @@ include "GuardarVideoModel.php";
 $nombre=$_POST["nombre"];
 $codigo = $_POST["codigo"];
 $plataforma = $_POST["plataforma"];
+$categoria = $_POST["clasificacion"];
 
-if (!empty($nombre) && !empty($codigo) && !empty($plataforma)) {
+if (!empty($nombre) && !empty($codigo) && !empty($plataforma) && !empty($categoria)) {
    
 
-    $id_guardar = guardarVideo($nombre, $codigo, $plataforma);
+    $id_guardar = guardarVideo($nombre, $codigo, $plataforma, $categoria);
     if ($id_guardar = 1) {
         
         echo "cambio echo";
