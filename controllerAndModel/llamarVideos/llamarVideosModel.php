@@ -1,7 +1,7 @@
 <?php 
     function buscar(){
         try{
-            include "../controllerAndModel/config.php";
+            include "../config.php";
             $conn = new PDO("mysql:host=" . $servername . ";dbname=" . $database . "; port=". $port, $username, $password);
             $conn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             
@@ -13,7 +13,7 @@
  
             while($row=$stmt->fetch(PDO::FETCH_ASSOC)){
              
-             $userData['AllUsers'][] = $row;
+             $userData['videos'][] = $row;
             }
             
             

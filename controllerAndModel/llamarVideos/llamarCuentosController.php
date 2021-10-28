@@ -8,7 +8,7 @@ if (!empty($valores)) {
     $mostrarValores = json_decode($valores);
     echo "<div hidden >" . $valores . " </div>";
     echo '<div hidden>';
-    echo '<form action="../../pages/contenido.php" method="POST">
+    echo '<form action="../../pages/cuentos.php" method="POST">
             <input type="text" id="objeto" name="objeto">
             <button id="btnFantasma2" type="submit"></button>
         </form>';
