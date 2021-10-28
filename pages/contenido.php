@@ -28,16 +28,16 @@
                                 <a class="nav-link active" href="../controllerAndModel/llamarVideos/llamarCancionesController.php">canciones</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="../pages/loginPage.php">Series</a>
+                                <a class="nav-link active" href="../controllerAndModel/llamarVideos/llamarSeriesController.php">Series</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="../pages/loginPage.php">Aprendizaaje</a>
+                                <a class="nav-link active" href="../controllerAndModel/llamarVideos/llamarAprendizajeController.php">Aprendizaaje</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="../pages/loginPage.php">ingles</a>
+                                <a class="nav-link active" href="../controllerAndModel/llamarVideos/llamarInglesController.php">ingles</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="../pages/loginPage.php">Actividades</a>
+                                <a class="nav-link active" href="../controllerAndModel/llamarVideos/llamarActividadesController.php">Actividades</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" href="../pages/loginPage.php">Cerrar Sesion</a>
@@ -65,9 +65,9 @@
 
                 echo '<div class="col-xxl-3 col-xl-4 col-lg-6 col-lg-9 col-md-12" >';
 
-                echo '<div id="nombre'.$i.'" class="text-white" style="height: 50px;" >' . $value["nombre"] . '</div>';
+                echo '<div id="nombre' . $i . '" class="text-white" style="height: 50px;" >' . $value["nombre"] . '</div>';
                 echo '<iframe id=iframe' . $i . ' allowfullscreen src="' . $value["codigo"] . '" width="420" height="240" frameborder="0"></iframe>';
-                echo '<button id="btnVisualizar'.$i.'"  type="button" class="btn btn-primary">Inciar Visualizacion</button>';
+                echo '<button id="btnVisualizar' . $i . '"  type="button" class="btn btn-primary">Inciar Visualizacion</button>';
                 echo '<button id="btnEliminar' . $i . '" type="button" class="btn btn-primary">Eliminar</button>';
 
 

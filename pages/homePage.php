@@ -28,16 +28,16 @@
                                 <a class="nav-link active" href="../controllerAndModel/llamarVideos/llamarCancionesController.php">canciones</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="../pages/loginPage.php">Series</a>
+                                <a class="nav-link active" href="../controllerAndModel/llamarVideos/llamarSeriesController.php">Series</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="../pages/loginPage.php">Aprendizaaje</a>
+                                <a class="nav-link active" href="../controllerAndModel/llamarVideos/llamarAprendizajeController.php">Aprendizaaje</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="../pages/loginPage.php">ingles</a>
+                                <a class="nav-link active" href="../controllerAndModel/llamarVideos/llamarInglesController.php">ingles</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="../pages/loginPage.php">Actividades</a>
+                                <a class="nav-link active" href="../controllerAndModel/llamarVideos/llamarActividadesController.php">Actividades</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" href="../pages/loginPage.php">Cerrar Sesion</a>
