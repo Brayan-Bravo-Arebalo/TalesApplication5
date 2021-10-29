@@ -5,7 +5,7 @@
             $conn = new PDO("mysql:host=" . $servername . ";dbname=" . $database . "; port=". $port, $username, $password);
             $conn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             
-            $stmt = $conn ->prepare("SELECT ID_USUARIOS FROM USUARIOS WHERE USUARIO = :user AND PASS = :pass");
+            $stmt = $conn ->prepare("SELECT id_usuario FROM usuarios WHERE usuario = :user AND pass = :pass");
             
             $stmt ->bindParam(":user",$userEmail);
             $stmt ->bindParam(":pass",$pass);
