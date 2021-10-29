@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    if(isset($_SESSION["user"])){
+    } else {
+        header("location:../pages/loginPage.php");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,7 +48,7 @@
                                 <a class="nav-link active" href="../controllerAndModel/llamarVideos/llamarActividadesController.php">Actividades</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="../pages/loginPage.php">Cerrar Sesion</a>
+                                <a class="nav-link active" href="../pages/cerrarSesion.php">Cerrar Sesion</a>
                             </li>
 
                         </ul>

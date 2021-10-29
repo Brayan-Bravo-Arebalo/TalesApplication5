@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if(isset($_SESSION["user"])){
+    } else {
+        header("location:../pages/loginPage.php");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 

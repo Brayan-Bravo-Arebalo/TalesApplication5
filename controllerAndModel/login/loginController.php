@@ -3,15 +3,13 @@
 include "loginModel.php";
 
 $userEmail = $_POST['email'];
-$password = $_POST['password'];
+$password = $_POST['password2'];
 
 if(!empty($userEmail) && !empty($password)){
-    $pass_md5 = md5("password");
-    $id = connection($userEmail, $pass_md5);
-        
-            
+    $id = connection($userEmail, $password);
         
         if ($id > 0){
+            
             
             session_start();
             $_SESSION["user"]=$userEmail;
