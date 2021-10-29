@@ -33,7 +33,11 @@ const visualizarVideo = (nombre, codigo, plataforma) => {
 
 
 
-const eliminarVideo = () =>{
+const eliminarVideo = (id) =>{
+    let input1 = document.getElementById("idEliminar");
+    let btnEliminar = document.getElementById("btnEliminarForm");
+    input1.value = id;
+    btnEliminar.click();
 
 }
 

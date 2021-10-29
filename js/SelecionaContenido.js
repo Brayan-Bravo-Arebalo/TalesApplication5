@@ -15,7 +15,9 @@ contenido.addEventListener("click", (e) => {
         }
 
         if (e.target.id == `btnEliminar${i}`) {
-            alert("dio click en eliminar")
+            let id = document.getElementById(`id${i}`).textContent;
+
+            eliminarVideo(id)
 
 
 

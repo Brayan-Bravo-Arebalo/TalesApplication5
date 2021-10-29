@@ -65,6 +65,7 @@
                 if ($value["categoria"] == "ingles") {
 
                     echo '<div class="col-xxl-3 col-xl-4 col-lg-6 col-lg-9 col-md-12" >';
+                    echo '<div hidden id="id'.$i.'">'.$value["id_video"].' </div>';
 
                     echo '<div id="nombre' . $i . '" class="text-white" style="height: 50px;" >' . $value["nombre"] . '</div>';
                     echo '<iframe id=iframe' . $i . ' allowfullscreen src="' . $value["codigo"] . '" width="420" height="240" frameborder="0"></iframe>';
@@ -93,6 +94,14 @@
             <input type="text" id="plataformaForm2" name="plataforma">
             <button id="btnFantasma2" type="submit"></button>
 
+        </form>
+
+    </div>
+
+    <div hidden id=paraEliminar>
+        <form action="../controllerAndModel/eliminarVideo/eliminarVideoController.php" method="POST">
+            <input type="text" id="idEliminar" name="idEliminar">
+            <button type="submit" id="btnEliminarForm"></button>
         </form>
 
     </div>
