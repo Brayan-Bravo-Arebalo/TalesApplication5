@@ -9,16 +9,24 @@
         
         
         if ($eliminada > 0){
-            echo 'alert("eliminado con exito");';
+            
+            echo '<script> let a = alert("eliminado con exito");
+                if(a){
+                    window.location.href = "../../pages/homePage.php";
+                } else {
+                    window.location.href = "../../pages/homePage.php";
+                }
+             </script>';
             die();
         } else {
-            echo 'alert("error al eliminar");';
+            echo '<script> alert("error al eliminar"); </script>';
+            header("location:../../pages/homePage.php"); 
             
             die();
               
         }
     } else {
-        echo 'alert("error al eliminar");';
+        echo '<script> alert("error al eliminar"); </script>';
+            header("location:../../pages/homePage.php"); 
         die();
-    }  
-?>
+    }

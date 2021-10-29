@@ -96,17 +96,19 @@
 
                         <div id="contenido" class="row">
 
-                            <?php /*
+                            <?php 
                             error_reporting(0);
                             $api_youtube = "AIzaSyCWH11RXJ_WdQkEl6k_q9lrf7RII-0r2-Q";
 
                             $url_youtube = "https://www.googleapis.com/youtube/v3/search";
-
+/*
                             if ($_POST["busqueda"] == "") {
                                 $busqueda = "canciones infantiles";
                             } else {
                                 $busqueda = $_POST["busqueda"];
-                            }
+                            }*/
+
+                            $busqueda = $_POST["busqueda"];
 
                             $busqueda = strtr($busqueda, " ", "+");
 
@@ -173,7 +175,6 @@
                                     $i++;
                                 }
                             }
-*/
                             ?> 
 
                         </div>
