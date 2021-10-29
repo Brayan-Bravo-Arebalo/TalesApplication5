@@ -5,7 +5,7 @@
             $conn = new PDO("mysql:host=" . $servername . ";dbname=" . $database . "; port=". $port, $username, $password);
             $conn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             
-            $stmt = $conn ->prepare("INSERT INTO videos (nombre, codigo, plataforma, categoria) VALUE (:nombre , :codigo , :plataforma, :categoria)");
+            $stmt = $conn ->prepare("INSERT INTO videos (NOMBRE, CODIGO, PLATAFORMA,CATEGORIA) VALUE (:nombre , :codigo , :plataforma, :categoria)");
             
             $stmt ->bindParam(":nombre",$nombre);
             $stmt ->bindParam(":codigo",$codigo);
