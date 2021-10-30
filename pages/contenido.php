@@ -58,7 +58,7 @@
         </nav>
     </div>
 
-    <div class="container-fluid text-white">
+    <div class="container-fluid text-white text-center">
 
         <div id="contenido" class="row bg-dark bg-opacity-50">
 
@@ -69,19 +69,20 @@
 
             $i = 0;
 
-            echo '<div><h3> actividades </h3> </div>';
+            echo '<div><h2> actividades </h2> </div>';
 
             foreach ($j["videos"] as $key => $value) {
                 if ($value["categoria"] == "actividades") {
 
-                    echo '<div class="col-xxl-3 col-xl-4 col-lg-6 col-lg-9 col-md-12" >';
+                    echo '<div class="col-xxl-4 col-sm-12 col-md-6 col-xl-6">';
                     echo '<div hidden id="id'.$i.'">'.$value["id_video"].' </div>';
 
                     echo '<div id="nombre' . $i . '" class="text-white" style="height: 50px;" >' . $value["nombre"] . '</div>';
                     echo '<iframe id=iframe' . $i . ' allowfullscreen src="' . $value["codigo"] . '" width="420" height="240" frameborder="0"></iframe>';
-                    echo '<button id="btnVisualizar' . $i . '"  type="button" class="btn btn-primary">Inciar Visualizacion</button>';
-                    echo '<button id="btnEliminar' . $i . '" type="button" class="btn btn-primary">Eliminar</button>';
-
+                    echo '<div class="btn-group col-12" role="group" aria-label="Basic example">';
+                        echo '<button id="btnVisualizar' . $i . '"  type="button" class="btn btn-primary">Inciar Visualizacion</button>';
+                        echo '<button id="btnEliminar' . $i . '" type="button" class="btn btn-primary">Eliminar</button>';
+                    echo '</div>';
 
                     echo '</div>';
                     $i++;
@@ -92,7 +93,7 @@
             foreach ($j["videos"] as $key => $value) {
                 if ($value["categoria"] == "aprendizaje") {
 
-                    echo '<div class="col-xxl-3 col-xl-4 col-lg-6 col-lg-9 col-md-12" >';
+                    echo '<div class="col-xxl-4 col-sm-12 col-md-6 col-xl-6" >';
                     echo '<div hidden id="id'.$i.'">'.$value["id_video"].' </div>';
 
                     echo '<div id="nombre' . $i . '" class="text-white" style="height: 50px;" >' . $value["nombre"] . '</div>';
@@ -110,14 +111,15 @@
             foreach ($j["videos"] as $key => $value) {
                 if ($value["categoria"] == "cancion") {
 
-                    echo '<div class="col-xxl-3 col-xl-4 col-lg-6 col-lg-9 col-md-12" >';
+                    echo '<div class="col-xxl-4 col-sm-12 col-md-6 col-xl-6" >';
                     echo '<div hidden id="id'.$i.'">'.$value["id_video"].' </div>';
 
                     echo '<div id="nombre' . $i . '" class="text-white" style="height: 50px;" >' . $value["nombre"] . '</div>';
                     echo '<iframe id=iframe' . $i . ' allowfullscreen src="' . $value["codigo"] . '" width="420" height="240" frameborder="0"></iframe>';
-                    echo '<button id="btnVisualizar' . $i . '"  type="button" class="btn btn-primary">Inciar Visualizacion</button>';
-                    echo '<button id="btnEliminar' . $i . '" type="button" class="btn btn-primary">Eliminar</button>';
-
+                    echo '<div class="btn-group col-12" role="group" aria-label="Basic example">';
+                        echo '<button id="btnVisualizar' . $i . '"  type="button" class="btn btn-primary">Inciar Visualizacion</button>';
+                        echo '<button id="btnEliminar' . $i . '" type="button" class="btn btn-primary">Eliminar</button>';
+                    echo '</div>';
 
                     echo '</div>';
                     $i++;
@@ -128,13 +130,16 @@
             foreach ($j["videos"] as $key => $value) {
                 if ($value["categoria"] == "cuento") {
 
-                    echo '<div class="col-xxl-3 col-xl-4 col-lg-6 col-lg-9 col-md-12" >';
+                    echo '<div class="col-xxl-4 col-sm-12 col-md-6 col-xl-6" >';
                     echo '<div hidden id="id'.$i.'">'.$value["id_video"].' </div>';
 
                     echo '<div id="nombre' . $i . '" class="text-white" style="height: 50px;" >' . $value["nombre"] . '</div>';
                     echo '<iframe id=iframe' . $i . ' allowfullscreen src="' . $value["codigo"] . '" width="420" height="240" frameborder="0"></iframe>';
-                    echo '<button id="btnVisualizar' . $i . '"  type="button" class="btn btn-primary">Inciar Visualizacion</button>';
-                    echo '<button id="btnEliminar' . $i . '" type="button" class="btn btn-primary">Eliminar</button>';
+                    echo '</br>';
+                    echo '<div class="btn-group col-12" role="group" aria-label="Basic example">';
+                        echo '<button id="btnVisualizar' . $i . '"  type="button" class="btn btn-primary">Inciar Visualizacion</button>';
+                        echo '<button id="btnEliminar' . $i . '" type="button" class="btn btn-primary">Eliminar</button>';
+                    echo '</div>';
 
 
                     echo '</div>';
@@ -146,14 +151,16 @@
             foreach ($j["videos"] as $key => $value) {
                 if ($value["categoria"] == "ingles") {
 
-                    echo '<div class="col-xxl-3 col-xl-4 col-lg-6 col-lg-9 col-md-12" >';
+                    echo '<div class="col-xxl-4 col-sm-12 col-md-6 col-xl-6" >';
                     echo '<div hidden id="id'.$i.'">'.$value["id_video"].' </div>';
 
                     echo '<div id="nombre' . $i . '" class="text-white" style="height: 50px;" >' . $value["nombre"] . '</div>';
-                    echo '<iframe id=iframe' . $i . ' allowfullscreen src="' . $value["codigo"] . '" width="420" height="240" frameborder="0"></iframe>';
-                    echo '<button id="btnVisualizar' . $i . '"  type="button" class="btn btn-primary">Inciar Visualizacion</button>';
-                    echo '<button id="btnEliminar' . $i . '" type="button" class="btn btn-primary">Eliminar</button>';
-
+                    echo '<div ><iframe id=iframe' . $i . ' allowfullscreen src="' . $value["codigo"] . '" width="420" height="240" frameborder="0"></iframe></div>';
+                    echo '</br>';
+                    echo '<div class="btn-group col-12" role="group" aria-label="Basic example">';
+                        echo '<button id="btnVisualizar' . $i . '"  type="button" class="btn btn-primary">Inciar Visualizacion</button>';
+                        echo '<button id="btnEliminar' . $i . '" type="button" class="btn btn-primary">Eliminar</button>';
+                    echo '</div>';
 
                     echo '</div>';
                     $i++;
@@ -164,14 +171,15 @@
             foreach ($j["videos"] as $key => $value) {
                 if ($value["categoria"] == "serie") {
 
-                    echo '<div class="col-xxl-3 col-xl-4 col-lg-6 col-lg-9 col-md-12" >';
+                    echo '<div class="col-xxl-4 col-sm-12 col-md-6 col-xl-6" >';
                     echo '<div hidden id="id'.$i.'">'.$value["id_video"].' </div>';
 
                     echo '<div id="nombre' . $i . '" class="text-white" style="height: 50px;" >' . $value["nombre"] . '</div>';
                     echo '<iframe id=iframe' . $i . ' allowfullscreen src="' . $value["codigo"] . '" width="420" height="240" frameborder="0"></iframe>';
-                    echo '<button id="btnVisualizar' . $i . '"  type="button" class="btn btn-primary">Inciar Visualizacion</button>';
-                    echo '<button id="btnEliminar' . $i . '" type="button" class="btn btn-primary">Eliminar</button>';
-
+                    echo '<div class="btn-group col-12" role="group" aria-label="Basic example">';
+                        echo '<button id="btnVisualizar' . $i . '"  type="button" class="btn btn-primary">Inciar Visualizacion</button>';
+                        echo '<button id="btnEliminar' . $i . '" type="button" class="btn btn-primary">Eliminar</button>';
+                    echo '</div>';
 
                     echo '</div>';
                     $i++;
@@ -179,24 +187,6 @@
             }
             
 
-            
-            /*
-
-            foreach ($j["videos"] as $key => $value) {
-
-                echo '<div class="col-xxl-3 col-xl-4 col-lg-6 col-lg-9 col-md-12" >';
-                echo '<div hidden id="id'.$i.'">'.$value["id_video"].' </div>';
-
-                echo '<div id="nombre' . $i . '" class="text-white" style="height: 50px;" >' . $value["nombre"] . '</div>';
-                echo '<iframe id=iframe' . $i . ' allowfullscreen src="' . $value["codigo"] . '" width="420" height="240" frameborder="0"></iframe>';
-                echo '<button id="btnVisualizar' . $i . '"  type="button" class="btn btn-primary">Inciar Visualizacion</button>';
-                echo '<button id="btnEliminar' . $i . '" type="button" class="btn btn-primary">Eliminar</button>';
-
-
-                echo '</div>';
-
-                $i++;
-            }*/
             ?>
 
 
