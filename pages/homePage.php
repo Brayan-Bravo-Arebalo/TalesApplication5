@@ -123,43 +123,43 @@ if (isset($_SESSION["user"])) {
                         echo    '<h6 id="nombre' . $i . '" style="height: 50px;" >' . $value["snippet"]["title"] . ' </h6>';
 
                         echo    '<iframe id=iframe' . $i . ' allowfullscreen src="' . $url_video . '" width="420" height="240" frameborder="0"></iframe>';
+                        echo '<div class="col-12" >';
                         echo    '<nav class="navbar navbar-expand-lg navbar-light">
                                     <div class="container-fluid">
                                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                                            <ul class="navbar-nav">
-                                                <button id="btnVisualizar' . $i . '"  type="button" class="btn btn-primary">Inciar Visualizacion</button>
-                                                <li id="btnGuardar' . $i . '" class="nav-item dropdown btn btn-primary">
-                                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        Guardar
-                                                    </a>
-                                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                                        <li><a id="btnGuardarCuentos' . $i . '" class="dropdown-item" href="#">cuento</a></li>
-                                                        <li><a id="btnGuardarCancion' . $i . '" class="dropdown-item" href="#">cancion</a></li>
-                                                        <li><a id="btnGuardarSeries' . $i . '" class="dropdown-item" href="#">Series</a></li>
-                                                        <li><a id="btnGuardarAprendisaje' . $i . '" class="dropdown-item" href="#">Aprendizaje</a></li>
-                                                        <li><a id="btnGuardarIngles' . $i . '" class="dropdown-item" href="#">Ingles</a></li>
-                                                        <li><a id="btnGuardarActividades' . $i . '" class="dropdown-item" href="#">Actividades</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
+                                            
                                         </div>
                                     </div>
                                 </nav>';
+                        echo '</div>';        
 
-                        echo '<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                        <button type="button" class="btn btn-primary">1</button>
-                        <button type="button" class="btn btn-primary">2</button>
-                      
-                        <div class="btn-group" role="group">
-                          <button id="btnGroupDrop'.$i.'" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
+                        echo '<nav class="navbar navbar-expand-lg navbar-light ">
+                        <div class="container-fluid">
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
                           </button>
-                          <ul class="dropdown-menu" aria-labelledby="btnGroupDrop'.$i.'">
-                            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-                            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-                          </ul>
+                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav">
+                          <button id="btnVisualizar' . $i . '"  type="button" class="btn btn-primary">Inciar Visualizacion</button>
+                          <li id="btnGuardar' . $i . '" class="nav-item dropdown btn btn-primary">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Guardar
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <li><a id="btnGuardarCuentos' . $i . '" class="dropdown-item" href="#">cuento</a></li>
+                                  <li><a id="btnGuardarCancion' . $i . '" class="dropdown-item" href="#">cancion</a></li>
+                                  <li><a id="btnGuardarSeries' . $i . '" class="dropdown-item" href="#">Series</a></li>
+                                  <li><a id="btnGuardarAprendisaje' . $i . '" class="dropdown-item" href="#">Aprendizaje</a></li>
+                                  <li><a id="btnGuardarIngles' . $i . '" class="dropdown-item" href="#">Ingles</a></li>
+                                  <li><a id="btnGuardarActividades' . $i . '" class="dropdown-item" href="#">Actividades</a></li>
+                              </ul>
+                          </li>
+                      </ul>
+                          </div>
                         </div>
-                      </div>';
+                      </nav>';
+
+                        
                         echo '</div>';
                         $i++;
                     }
