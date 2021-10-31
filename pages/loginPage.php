@@ -20,7 +20,7 @@
 </head>
 
 
-<body style="background-image: url(../img/astronauta.jpg);">
+<body style="background-image: url(../img/cuento.jpg);">
     <div class=" m-0 vh-100 row justify-content-center align-items-center ">
 
         <div class="bg-dark bg-opacity-25 text-white col-md-5 justify-content-center align-items-center">

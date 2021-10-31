@@ -11,21 +11,30 @@
 </head>
 
 
-<body style="background-image: url(img/playCubos.jpg);">
+<body style="background-image: url(img/cuento.jpg);">
     <div><br><br><br><br><br><br><br><br><br><br></div>
     <div class="align-content-center">
 
         <div class="card text-center bg-dark bg-opacity-25 text-white ">
             <div class="card-header">
-                Pagina En Contruccion
+                <h1 class="card-title">Tales Application</h1>
+                <p class="card-text">Aplicación de gestión contenido audiovisual para niños </p>
             </div>
             <div class="card-body">
-                <h1 class="card-title">Tales Application</h1>
-                <p class="card-text">aplicacion de gestion contenido audiovisual para miños </p>
-                <a href="pages/loginPage.php" class="btn btn-primary">Iniciar Sesion</a>
+                <h4>
+                    <div class="card-text">
+                        Almacena todos los videos que deseas que vena tus hijos a traves de las categorias
+
+                    </div>
+                    <div class="card-text">
+
+                        videos como canciones, cuentos, series, videos de aprendisaje, videos para realizar actividades y contenido en ingles para que tus hijos puedan ver el contendio de forma segura
+                    </div>
+
+                </h4>
             </div>
             <div class="card-footer ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio similique sit inventore sint ipsa. Error sequi aspernatur dolores dignissimos, nobis odit nisi cupiditate placeat ipsa, harum dolor odio dolorum nulla.
+                <a href="pages/loginPage.php" class="btn btn-primary">Iniciar Sesion</a>
             </div>
         </div>
     </div>

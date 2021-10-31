@@ -17,7 +17,7 @@ if (isset($_SESSION["user"])) {
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 </head>
 
-<body style="background-image: url(../img/img1.jpg);">
+<body style="background-image: url(../img/fondo3.jpg);">
     <div id="menu">
         <nav class="navbar navbar-expand-lg navbar-dark  bg-dark">
             <div class="container-fluid">

@@ -18,7 +18,7 @@
 
 </head>
 
-<body style="background-image: url(../img/img1.jpg);">
+<body style="background-image: url(../img/fondo1.jpg);">
     <?php
     
     $nombre = $_POST["nombre"];

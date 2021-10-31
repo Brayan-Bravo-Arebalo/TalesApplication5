@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 </head>
 
-<body style="background-image: url(../img/img1.jpg);">
+<body style="background-image: url(../img/fondo3.jpg);">
     <div id="menu">
         <nav class="navbar navbar-expand-lg navbar-dark  bg-dark">
             <div class="container-fluid">
@@ -58,7 +58,7 @@
         </nav>
     </div>
 
-    <div class="container-fluid text-white">
+    <div class="container-fluid text-white text-center">
 
         <div id="contenido" class="row bg-dark bg-opacity-50">
 
