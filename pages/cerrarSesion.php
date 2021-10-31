@@ -11,5 +11,5 @@
         );
     }
     session_destroy();
-    header("location:../pages/loginPage.php");
+    header("location:../index.php");
 ?>

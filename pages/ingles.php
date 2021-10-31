@@ -17,7 +17,7 @@
 </head>
 
 <body style="background-image: url(../img/fondo3.jpg);">
-    <div id="menu">
+<div id="menu">
         <nav class="navbar navbar-expand-lg navbar-dark  bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../pages/homePage.php">Tales Application</a>
@@ -32,22 +32,22 @@
                                 <a class="nav-link active" href="../controllerAndModel/llamarVideos/llamarCuentosController.php">Cuentos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="../controllerAndModel/llamarVideos/llamarCancionesController.php">canciones</a>
+                                <a class="nav-link active" href="../controllerAndModel/llamarVideos/llamarCancionesController.php">Canciones</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" href="../controllerAndModel/llamarVideos/llamarSeriesController.php">Series</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="../controllerAndModel/llamarVideos/llamarAprendizajeController.php">Aprendizaaje</a>
+                                <a class="nav-link active" href="../controllerAndModel/llamarVideos/llamarAprendizajeController.php">Aprendizaje</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="../controllerAndModel/llamarVideos/llamarInglesController.php">ingles</a>
+                                <a class="nav-link active" href="../controllerAndModel/llamarVideos/llamarInglesController.php">Inglés</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" href="../controllerAndModel/llamarVideos/llamarActividadesController.php">Actividades</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="../pages/loginPage.php">Cerrar Sesion</a>
+                                <a class="nav-link active" href="../pages/cerrarSesion.php">Cerrar Sesion</a>
                             </li>
 
                         </ul>

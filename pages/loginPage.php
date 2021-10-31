@@ -21,6 +21,12 @@
 
 
 <body style="background-image: url(../img/cuento.jpg);">
+
+<div class="container">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <div> <a href="../index.php" class="btn btn-secondary"> volver</a> </div>
+        </div>
+    </div>
     <div class=" m-0 vh-100 row justify-content-center align-items-center ">
 
         <div class="bg-dark bg-opacity-25 text-white col-md-5 justify-content-center align-items-center">
