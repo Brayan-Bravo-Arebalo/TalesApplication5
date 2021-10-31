@@ -12,6 +12,12 @@
 
 
 <body style="background-image: url(img/cuento.jpg);">
+
+    <div class="container">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <div> <a href="pages/equipoDeTrabajo.php" class="btn btn-secondary"> Equipo de Trabajo</a> </div>
+        </div>
+    </div>
     <div><br><br><br><br><br><br><br><br><br><br></div>
     <div class="align-content-center">
 
