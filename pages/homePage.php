@@ -33,16 +33,16 @@ if (isset($_SESSION["user"])) {
                                 <a class="nav-link active" href="../controllerAndModel/llamarVideos/llamarCuentosController.php">Cuentos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="../controllerAndModel/llamarVideos/llamarCancionesController.php">canciones</a>
+                                <a class="nav-link active" href="../controllerAndModel/llamarVideos/llamarCancionesController.php">Canciones</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" href="../controllerAndModel/llamarVideos/llamarSeriesController.php">Series</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="../controllerAndModel/llamarVideos/llamarAprendizajeController.php">Aprendizaaje</a>
+                                <a class="nav-link active" href="../controllerAndModel/llamarVideos/llamarAprendizajeController.php">Aprendizaje</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="../controllerAndModel/llamarVideos/llamarInglesController.php">ingles</a>
+                                <a class="nav-link active" href="../controllerAndModel/llamarVideos/llamarInglesController.php">Inglés</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" href="../controllerAndModel/llamarVideos/llamarActividadesController.php">Actividades</a>
@@ -331,6 +331,18 @@ if (isset($_SESSION["user"])) {
             <input type="text" id="nombrefForm2" name="nombre">
             <input type="text" id="codigoForm2" name="codigo">
             <input type="text" id="plataformaForm2" name="plataforma">
+
+            <input type="text" id="nombrefForm3" name="nombre1">
+            <input type="text" id="codigoForm3" name="codigo1">
+            <input type="text" id="plataformaForm3" name="plataforma1">
+
+            <input type="text" id="nombrefForm4" name="nombre2">
+            <input type="text" id="codigoForm4" name="codigo2">
+            <input type="text" id="plataformaForm4" name="plataforma2">
+
+            <input type="text" id="nombrefForm5" name="nombre3">
+            <input type="text" id="codigoForm5" name="codigo3">
+            <input type="text" id="plataformaForm5" name="plataforma3">
             <button id="btnFantasma2" type="submit"></button>
 
         </form>
